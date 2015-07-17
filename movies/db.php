@@ -1,10 +1,5 @@
 <?php
-
-    define("DBHOST", "localhost"); //ip du serveur MySQL
-    define("DBUSER", "root"); 		//username MySQL
-    define("DBPASS", "");			//mot de passe MySQL
-    define("DBNAME", "movies"); 	//nom de la bdd
-
+	include("config.php");
 	try {
 		//crée un objet PDO
 		$dbh = new PDO(
